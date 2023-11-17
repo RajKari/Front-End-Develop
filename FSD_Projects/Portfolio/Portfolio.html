@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Nunito&family=Philosopher&family=Playpen+Sans:wght@300&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            width: 100%;
+            height:50px;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: azure;
+            padding: 0 20px ;
+            box-sizing: border-box;
+        }
+        nav ul{
+            width: 50%;
+            justify-content: center;
+            display: flex;
+            list-style: none;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 800;
+        }
+        li{
+            width: 20%;
+            cursor: pointer;
+        }
+        .profile{
+            width: 100%;
+            height: 97vh;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+        }
+        .logo-room{
+            width: 5%;
+            height: 97vh;
+            height: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 20px;
+        }
+        .logo{
+            margin: 10px 0;
+        }
+        .profile-left{
+           width: 45%;  
+           height: 97vh;   
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+        }
+        .profile-left h6{
+            padding: 0;
+            font-size: 20px;
+            color: skyblue;
+            font-family: 'Pacifico', cursive;
+        }
+        .profile-left h1{
+            font-size: 40px;
+            padding: 10px 0;
+            color: rgb(24, 16, 70);
+        }
+        .profile-left p{
+            font-size: 15px;
+            font-family: 'Nunito', sans-serif;
+            line-height: 25px;
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.768);
+            letter-spacing: 1.5px;
+        }
+        .profile-left .skill{
+            height: 50px;
+            overflow: hidden;
+        }
+        .item{
+            height: 100%;
+            animation: scrool 5s ease-in-out infinite alternate ;
+        }
+        @keyframes scrool {
+            25%{ transform: translateY(-50px);}
+            50%{ transform: translateY(-100px);}
+            75%{ transform: translateY(-150px);}
+            100%{ transform: translateY(-200px);}
+        }
+        .i-name{
+            height: 50px;
+            font-size: 40px;
+            color: green;
+            display: flex;
+            align-items: center;
+        }
+        div button{
+            width: 150px;
+            height: 40px;
+            margin: 20px;
+            border-radius: 30px;
+            color: skyblue;
+            border:1px skyblue solid ;
+            background: none;
+            font-size: 15px;
+            padding: 0 3pxpx;
+            font-weight: 600px;
+        }
+        div #btn{
+            background: skyblue;
+            color: white;
+        }
+        .right{
+            width: 45%;
+        }
+        .right img{           
+            height: 97vh;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Web Developer</h1> 
+        <ul>
+            <li>Home</li>
+            <li>My Intro</li>
+            <li>Services</li>
+            <li>Portfolio</li>
+            <li>Blog</li>
+        </ul> 
+    </nav>
+   <div class="profile">
+    <section class="logo-room">
+        <div class="logo"> <i class="fa-brands fa-facebook-f"></i></div>
+        <div class="logo"> <i class="fa-brands fa-twitter"></i></div>
+        <div class="logo"> <i class="fa-brands fa-linkedin"></i></div>
+        <div class="logo"> <i class="fa-brands fa-github"></i></div>        
+    </section>
+    <section class="profile-left">
+        <h6>Hi, I am</h6>
+        <h1>Raju Kari</h1>
+       <div style="display: flex;">
+        <div class="skill">
+            <div class="item">
+                <div class="i-name"><i class="fa-brands fa-html5"></i></div>
+                <div class="i-name"><i class="fa-brands fa-css3-alt"></i></div>
+                <div class="i-name"><i class="fa-brands fa-js"></i></div>
+                <div class="i-name"><i class="fa-brands fa-bootstrap"></i></div>
+                <div class="i-name"><i class="fa-brands fa-git-alt"></i></div>
+            </div>
+           </div >
+           <h2 style="font-size: 40px; color: rgb(255, 204, 0); font-family: 'Varela Round', sans-serif;">Front End</h2>
+       </div>
+        <p> The front end of a website is everything the user either sees or interacts with when they visit the website.
+            It is responsible for the total look and feel of an online experience.</p>
+        <div>
+            <button id="btn"> Contect Me</button> 
+            <button > Download CV</button>
+        </div> 
+    </section>
+    <section class="right">
+        <div >
+            <img src="men.png" alt="name">
+        </div>
+    </section>
+
+   </div>
+</body>
+</html>
